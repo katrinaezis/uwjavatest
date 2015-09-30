@@ -1,0 +1,214 @@
+Hello world!
+1  echo 'this is input text'
+    2  git config --global user.name "Katrina Ezis"
+    3  git --version
+    4  yum install curl-devel expat-devel gettext-devel   openssl-devel zlib-devel
+    5  echo 'this is input text'
+    6  git --section
+    7  git config --global user.name "Katrina Ezis"
+    8  git config --global user.email "katrinaezis@gmail.com"
+    9  git credential-osxkeychain
+   10  git clone https://github.com/katrinaezis/Repo1
+   11  cd repo1/
+   12  git diff
+   13  open readme.md
+   14  open readme.md
+   15  git status
+   16  git status
+   17  git add readme.md
+   18  git status
+   19  git commit -m "first commit" 
+   20  git pull
+   21  git commit -m "first commit" 
+   22  git add readme.md
+   23  git push
+   24  git pull
+   25  open readme.md
+   26  open readme.md
+   27  git status
+   28  git add readme.md
+   29  git status
+   30  git add README.md
+   31  git status
+   32  git commit -m "updated readme"
+   33  git push
+   34  git push
+   35  open README.md
+   36  git pull
+   37  git add
+   38  git add .
+   39  git commit -m "conflict soon"
+   40  git pull
+   41  git push
+   42  git add .
+   43  git push
+   44  git add README.md
+   45  git commit
+   46  git status
+   47  git push 
+   48  open README.md 
+   49  git pull
+   50  git status
+   51  git merge
+   52  git branch new sparkles
+   53  git branch new 'sparkles'
+   54  git status
+   55  git add README.md
+   56  git commit
+   57  git status
+   58  open README.md 
+   59  git push
+   60  git push 
+   61  git push
+   62  git status
+   63  git add README.md 
+   64  git status
+   65  git commit
+   66  git add README.md
+   67  git push
+   68  git status
+   69  new branch "sparkles"
+   70  git branch new sparkles
+   71  git branch new woody
+   72  git status
+   73  git pull
+   74  open README.md 
+   75  git pull
+   76  open README.md 
+   77  open README.md 
+   78  ls 
+   79  less README.md 
+   80  less README.md 
+   81  vi README.md 
+   82  git commit -a -m 'force conflict'
+   83  git push 
+   84  git pull
+   85  vi README.md 
+   86  open README.md 
+   87  git add README.md 
+   88  git commit README.md 
+   89  git push
+   90  open README.md 
+   91  git status
+   92  git commit -m "merge conflict"
+   93  git push
+   94  git status
+   95  git branch new
+   96  git status
+   97  git checkout new
+   98  push origin new
+   99  git push origin new
+  100  ls
+  101  open README.md 
+  102  git checkout master
+  103  git add
+  104  git add .
+  105  git commit -m "line 16"
+  106  git push
+  107  git status
+  108  open README.md 
+  109  open README.md 
+  110  git add .
+  111  git commit -m "my email"
+  112  git push
+  113  git status
+  114  git checkout new
+  115  git open README.md 
+  116  nano README.md 
+  117  open README.md 
+  118  git add .
+  119  git commit
+  120  git commit -m "new branch start"
+  121  git push
+  122  open README.md 
+  123  git checkout master
+  124  open README.md 
+  125  git add .
+  126  git commit -m "added header" 
+  127  git push
+  128  git status
+  129  git add ,
+  130  git add .
+  131  git commit -m "added p"
+  132  git push
+  133  git status
+  134  git add .
+  135  git commit -m "added list"
+  136  git push
+  137  git status
+  138  open README.md
+  139  git status
+  140  git checkout repo1
+  141  git pull
+  142  git clone
+  143  git status
+  144  .git
+  145  git pull
+  146  git clone https://github.com/katrinaezis/Repo1
+  147  git status
+  148  git config --global user.name "Katrina Ezis"
+  149  git config --global user.email "katrinaezis@gmail.com"
+  150  git status
+  151  git add READ.md
+  152  open https://github.com/katrinaezis/Repo1#repo1
+  153  git pull https://github.com/katrinaezis/Repo1#repo1
+  154  git clone https://github.com/katrinaezis/Repo1#repo1
+  155  open README.md
+  156  nano README.md
+  157  git clone https://github.com/katrinaezis/Repo1#repo1
+  158  yes
+  159  git clone https://github.com/katrinaezis/Repo1
+  160  git status
+  161  open https://github.com/katrinaezis/Repo1
+  162  git init
+  163  git pull https://github.com/katrinaezis/Repo1
+  164   
+  165  git status
+  166  open README.md
+  167  git add .
+  168  git status
+  169  git add
+  170  git add .
+  171  git join repo1
+  172  git status
+  173  git commit -m "put a link" 
+  174  git push
+  175  git remote add https://github.com/katrinaezis/Repo1
+  176  git status
+  177  git add .
+  178  git open README.md
+  179  git clone https://github.com/katrinaezis/Repo1
+  180  git pull https://github.com/katrinaezis/Repo1
+  181  open README.md
+  182  git add .
+  183  git clone https://github.com/katrinaezis/Repo1
+  184  git pull https://github.com/katrinaezis/Repo1
+  185  git status
+  186  git commit -m "added a link" 
+  187  git commit -a
+  188  open README.md
+  189  git add
+  190  git add .
+  191  git pull https://github.com/katrinaezis/Repo1
+  192  git status
+  193  open README.md
+  194  git pull
+  195  git pull https://github.com/katrinaezis/Repo1
+  196  git open
+  197  git checkout new
+  198  git pull https://github.com/katrinaezis/Repo1
+  199  open READ.md
+  200  open README.md
+  201  git add .
+  202  clone https://github.com/katrinaezis/Repo1
+  203  git pull https://github.com/katrinaezis/Repo1
+  204  open README.md
+  205  git commit -m "changes" 
+  206  git add
+  207  git add . 
+  208  git clone https://github.com/katrinaezis/Repo1
+  209  git pull https://github.com/katrinaezis/Repo1
+  210  git status
+  211  git checkout
+  212  open README.md
+  213  git add .
