@@ -1,0 +1,134 @@
+/*
+	Katrina Ezis
+	Info-343
+	Spotify Challenge 
+	November 9th, 2015*/
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+
+.albumArt {
+	height: 200px;
+	width: 200px;
+}
+
+.albumArt:hover + .overlay {
+	display: block;
+}
+
+body {
+	font-family: 'Josefin Slab', serif;
+}
+
+#blur {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(121, 128, 128, 0.95);
+}
+
+.eachImage {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5%;
+	height: 250px;
+	overflow: hidden;
+}
+
+#error {
+	color: white;
+	margin-top: 0px;
+}
+
+.fsImg {
+	max-height: 150px;
+}
+
+.flat {
+	padding-top: 1%;
+}
+
+#header {
+	height: 500px;
+	width: 100%;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0px;
+	overflow: hidden;
+}
+
+.header {
+	display: block;
+	margin: auto;
+}
+
+#howTo {
+	margin-top: 3%;
+	display: block;
+	text-align: center;
+}
+
+#howImg {
+	display: block;
+	margin: auto;
+}
+
+.hover {
+	background-color: blue;
+}
+
+#logo {
+	display: block;
+	margin: auto;
+	height: 400px;
+	padding-top: 5%;
+}
+
+p {
+	font-size: 14pt;
+	margin: 10%;
+}
+
+.overlay {
+	padding: 25%;
+	background-color: rgba(121, 128, 128, 0.8);
+	height: 200px;
+	width: 200px;
+	text-align: center;
+	z-index: 1;
+	position: relative;
+	top: -200px;
+	display: none;
+}
+
+#searchForm {
+	position: relative;
+	z-index: 50;
+	top: -195px;
+}
+
+
+
+.smTerm {
+	max-height: 75px;
+}
+
+#submit {
+	visibility: hidden;
+}
+
+#search {
+	width: 40%;
+	text-align: center;
+	border-radius: 30px;
+	display: block;
+	margin: auto;
+}
+
+.selectImages {
+	padding: 1%;
+	display: block;
+	margin-right: 0 auto;
+	margin-left: 0 auto;
+	text-align: center;
+}
