@@ -1,0 +1,93 @@
+<!-- 
+	Katrina Ezis
+	Info-343
+	Spotify Challenge 
+	November 9th, 2015 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spotify Template</title>
+	<link rel="icon" type="image/png" href="images/logo.png" />
+	
+	<!-- Include libraries -->
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+	
+	<!-- Read scripts -->
+	<script src="js/app.js"></script>
+	<link href="css/app.css" type="text/css" rel="stylesheet"/>	
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myCtrl">
+		<div id="header">
+			<div id="blur">
+				<a href="index.html"><img id="logo" src="images/logo.png"></a>
+				<form id="searchForm" class="container" name="songForm">
+					<div class="form-group">
+						<input id="search" name="search" placeholder="Enter a band, song, or album here. Press enter." ng-model="track" class="form-control" autocomplete="off" ng-mouseover="searchHover()" ng-mouseout="searchOut()" ng-required="true" ng-minlength="3" required></input>
+						<input id="submit" type="submit" ng-click="getSongs()" ng-disabled="songForm.$invalid"></input>
+						<p id="error" ng-show="songForm.search.$error.minlength" class="help-block text-center">Pshh no band names are that short.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="howTo" class="container">
+			<img id="howImg" src="images/how.png">
+			<div class="row">
+				<div class="flat col-xs-3">
+					<img class="smTerm" src="images/searchBlack.png">
+					<img class="fsImg" src="images/fs-search.png">
+					<p class="howText">Use the search bar above to look for your
+						favorite artist, band, album, or song.</p>
+				</div>
+				<div class="flat col-xs-3">
+					<img class="smTerm" src="images/selectBlack.png">
+					<img class="fsImg" src="images/fs-location.png">
+					<p class="howText">Once you have pressed enter there will be a
+						page of results. Select the correct artist, song,
+						or album.</p>
+				</div>
+				<div class="flat col-xs-3">
+					<img class="smTerm" src="images/listenBlack.png">
+					<img class="fsImg" src="images/fs-music.png">
+					<p class="howText">Now you will be taken to a page with new, lesser-known artists. Click on any of these artists' images to listen to some of their music.</p>
+				</div>
+				<div class="flat col-xs-3">
+					<img class="smTerm" src="images/likeBlack.png">
+					<img class="fsImg" src="images/fs-thumbs_1.png">
+					<p class="howText">Now you have lots of new music to like! Feel free to search for some of your other favorite artists.</p>
+				</div>
+			</div>
+		</div>
+		<div id="searchResults" class="container-fixed">
+			<img class="header" src="images/select.png">
+			<div id="selectImages container">
+				<div ng-repeat="track in tracks" class="eachImage" ng-click="newArtist(track.artists)" title="{{track.name}}">
+					<img class="albumArt" src="{{track.album.images[0].url}}" ng-mouseover="hover()" ng-mouseout="noHover()">
+					<div class="overlay">{{track.name + ' by ' + track.artists[0].name}}</div>
+				</div>
+			</div>			
+		</div>
+		<!-- New Artists -->
+		<div id="newArtists" class="container">
+			<img class="header" src="images/listen.png">
+			<div class="help-block text-center">
+				<span ng-show="tracks.length>0">Click to sample</span>
+				<span ng-show="currentSong && !audioObject.paused">{{'Now listening to ' + thisName}}</span>
+			</div>
+			<div class="selectImages container">
+				<div ng-repeat="artist in artists" class="eachImage" ng-click="play(artist.songs.preview_url, artist)"  title="{{track.name}}">
+					<img class="albumArt" src="{{artist.images[0].url}}">
+					<div class="overlay">{{artist.name}}</div>
+				</div>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
